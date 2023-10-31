@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import {NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    DiretivasEstruturaisComponent
   ],
   imports: [
     BrowserModule,
