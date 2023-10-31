@@ -1,10 +1,23 @@
+<h1>ngIf</h1>
+
 <p *ngIf="condition; else elseBlock">True</p>
 <ng-template #elseBlock>
   <p>False</p>
 </ng-template>
 
-<hr>
+-------------------
 
 <p *ngIf="conditionClick">True</p>
 <p *ngIf="!conditionClick">False</p>
 <button (click)="onClick()">Clicar</button>
+
+<hr>
+
+<h1>ngFor</h1>
+<button (click)="addItem()">Adicionar</button>
+<ul>
+  <li *ngFor="let item of items, let i = index" (click)="onClickEventList(i)">
+    [{{i+1}}] - {{item.name}} - {{item.age}}
+  </li>
+</ul>
+
