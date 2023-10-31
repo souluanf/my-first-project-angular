@@ -1,0 +1,32 @@
+<h1>Interpolation</h1>
+<p>{{name}} tem {{age}} anos</p>
+<p>{{name}} é maior de idade? </p>
+<p>{{age >= 18 ? 'Sim' : 'Não'}}</p>
+
+<hr>
+
+<h1>Property Binding</h1>
+<p [textContent]="name + ' tem ' + age + ' anos'"></p>
+<p [style.color]="age >= 18 ? 'green' : 'red'">Maior de idade?</p>
+<img [src]="imgSrc" alt="" *ngIf="showImage">
+<br>
+<button [disabled]="checkedDisabled" (click)="hideImage()">{{textButton}}</button>
+
+<hr>
+
+<h1>Event Binding</h1>
+<button (click)="alertInfo($event)">Event</button>
+<div (mousemove)="mouseMoveTeste($event)" style="background: red; width: 300px; height: 300px" ></div>
+{{position.x}} | {{position.y}}
+
+<hr>
+
+<h1>Two-way Data Binding</h1>
+<input [(ngModel)]="name" type="text">
+<p>{{name}}</p>
+
+<br>
+<br>
+<br>
+<hr>
+
