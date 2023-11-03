@@ -21,3 +21,14 @@
   </li>
 </ul>
 
+<hr>
+
+<h1>ngSwitch</h1>
+<input type="text" [(ngModel)]="name">
+<div [ngSwitch]="name.toLowerCase()">
+  <p *ngSwitchCase="'luan'">Luan</p>
+  <p *ngSwitchCase="'safira'">Safira</p>
+  <p *ngSwitchCase="'gordinho'">Gordinho</p>
+  <p *ngSwitchDefault>Not found</p>
+</div>
+

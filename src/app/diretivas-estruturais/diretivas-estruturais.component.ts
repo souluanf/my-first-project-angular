@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./diretivas-estruturais.component.scss']
 })
 export class DiretivasEstruturaisComponent implements OnInit {
+  public name: string = 'Luan';
   public condition: boolean = true;
   public conditionClick: boolean = true;
   public items: Array<{ name: string, age: number }> = [
@@ -16,7 +17,6 @@ export class DiretivasEstruturaisComponent implements OnInit {
   ]
 
   private _itemCount: number = this.items.length + 1;
-
 
   ngOnInit(): void {
     setInterval(
