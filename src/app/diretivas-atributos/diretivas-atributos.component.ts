@@ -6,10 +6,20 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./diretivas-atributos.component.scss']
 })
 export class DiretivasAtributosComponent implements OnInit {
-  public value : boolean = true;
+  public value: boolean = true;
+  public heightPx: string = '20px';
+  public backgroundColor: string = 'red';
+
   ngOnInit(): void {
     setInterval((): void => {
       this.value = !this.value;
+      if (this.heightPx === '20px') {
+        this.heightPx = '50px';
+        this.backgroundColor = 'blue';
+      } else {
+        this.heightPx = '20px';
+        this.backgroundColor = 'red';
+      }
     }, 2000);
   }
 
