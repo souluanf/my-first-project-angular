@@ -1,16 +1,19 @@
-<!--<div *ngIf="name != 'remove'">-->
-<!--  <p [ngClass]="{'active': value, 'disabled': !value}">NgClass</p>-->
-<!--  <p [ngStyle]="{'height': heightPx, 'background': backgroundColor}">NgStyle</p>-->
-<!--</div>-->
+<ng-content select="h1"></ng-content>
+<div *ngIf="name != 'remove'">
+  <p [ngClass]="{'active': value, 'disabled': !value}">NgClass</p>
+  <p [ngStyle]="{'height': heightPx, 'background': backgroundColor}">NgStyle</p>
+</div>
 
-<!--<hr>-->
+<hr>
 
-<!--<input [(ngModel)]="name"> {{name}}-->
-<!--<button (click)="save()">Save</button>-->
+<input [(ngModel)]="name"> {{name}}
+<button (click)="save()">Save</button>
 
-<!--<ol>-->
-<!--  <li *ngFor="let item of list">{{item.name}}</li>-->
-<!--</ol>-->
+<ol>
+  <li *ngFor="let item of list">{{item.name}}</li>
+</ol>
+
+<hr>
 
 <input [(ngModel)]="name" ngModel (keydown.enter)="save()">
 <button (click)="save()">Save</button>
@@ -19,4 +22,6 @@
     {{item.name}}
   </p>
 </ng-template>
+
+<ng-content select="hr"></ng-content>
 
