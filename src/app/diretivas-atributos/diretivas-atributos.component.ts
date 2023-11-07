@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./diretivas-atributos.component.scss']
 })
 export class DiretivasAtributosComponent implements OnInit {
+  public date: Date = new Date();
   public value: boolean = true;
   public heightPx: string = '20px';
   public backgroundColor: string = 'red';
