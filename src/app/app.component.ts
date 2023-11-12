@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public addValue = 1;
+  public getDados: { nome: string, idade: number } | undefined;
 
   public add() {
     this.addValue++;
+  }
+
+  public setDados(event: { nome: string, idade: number }) {
+    this.getDados = event;
   }
 }
