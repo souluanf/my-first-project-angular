@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-first-project';
+  public addValue = 1;
+
+  public add() {
+    this.addValue++;
+  }
 }
